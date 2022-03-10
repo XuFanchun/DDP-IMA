@@ -3,6 +3,7 @@ body {
 	font-family: 'League Spartan', sans-serif;
 	font-size: 20px;
 	line-height: 30px;
+
 }
 
 /*Header section*/
@@ -48,17 +49,130 @@ main{
 }
 
 main img{
-	max-width: 100%;
+
+	max-width: 80%;
 }
 
-.photo{
-    float:left;
-    width:40%;
+
+.container{
+    position: relative;
+    height: 750px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px 20px 20px 0px;
 }
-.intro{
-    float:right;
-    width:80%;
+
+.container .card{
+    margin-top: 100px;
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #fff;
+    margin: 30px 50px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+    transition: .3s ease-in-out;
 }
+
+.container .card:hover{
+    height: 430px;
+}
+
+.container .card .imgBx{
+    position: relative;
+    width: 260px;
+    height: 225px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.container .card .imgBx img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.container .card .content{
+    position: relative;
+    margin-top: -140px;
+    padding: 0px 0px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+
+.container .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -60px;
+    transition-delay: .3s;
+}
+
+      
+        #banner {
+            
+            overflow: hidden;
+        }
+
+        #banner, ul > li, ul > li img {
+            width: 1000px;
+            height: 650px;
+        }
+
+        .re {
+            position: relative;
+            width: calc(1500px * 5);
+            animation: re 15s linear infinite;
+        }
+
+        ul > li {
+            float: left;
+        }
+
+        @keyframes re {
+            0% {
+                left: calc(1000px * 0);
+            }
+
+
+            /*10%让他不变*/
+            15% {
+                left: calc(1000px * -1);
+            }
+            25% {
+                left: calc(1000px * -1);
+            }
+
+
+
+            40% {
+                left: calc(1000px * -2);
+            }
+            50% {
+                left: calc(1000px * -2);
+            }
+            65% {
+                left: calc(1000px * -3);
+            }
+            75% {
+                left: calc(1000px * -3);
+            }
+            90% {
+                left: calc(1000px * -4);
+            }
+            100% {
+                left: calc(1000px * -4);
+            }
+        }
+
 
 main h2{
 	font-size: 30px;
